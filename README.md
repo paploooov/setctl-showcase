@@ -27,23 +27,23 @@ The shared demo is read-only. Creating workouts and editing plans require a writ
 | Reorder untouched exercises for today's workout | Review JSON, CSV, TSV and supported Excel imports | Session history and workout detail |
 | Substitute exercises without rewriting the template | Adjust exercise order, sets and rep targets | Data-quality-aware training check-ins |
 
-### A focused workout screen
-
-<img src="media/workout-mobile.png" alt="Actual mobile workout UI with sample Incline Dumbbell Press set and reorder controls" width="340">
-
-Actual application capture at 390 CSS pixels, using a local sample workout. The header artwork above is an AI-assisted device mockup based on this screen.
-
-### Build a training week
-
-![Actual desktop planner with an Upper A sample plan](media/planner-desktop.png)
-
-Captured from the local application with a simulated signed-in sample profile and a deliberately small exercise fixture. No personal account or training data is shown.
-
 ### See the work add up
 
-![Actual production analytics screen with sample training history](media/analytics-desktop.png)
+![SetCtl Review overview and weekly volume chart with pink accents](media/review-overview.png)
 
-Captured from the public, read-only demo. All training figures are seeded examples, not user adoption metrics or the author's personal results.
+Owner-provided application screenshot showing the Review overview, training check-in and weekly volume.
+
+### Follow strength progress
+
+![SetCtl strength progress chart with Back Squat selected](media/strength-progress.png)
+
+Owner-provided screenshot of the exercise-specific strength view with Back Squat selected.
+
+### Make it yours
+
+![SetCtl appearance settings with theme, compact mode, text size and accent colour options](media/appearance-settings.png)
+
+Owner-provided screenshot showing appearance controls and the shared demo's passkey notice. The screenshots are reproduced unchanged; the header remains a separately labeled AI-assisted product mockup.
 
 ## Engineering highlights
 
