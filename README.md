@@ -34,25 +34,25 @@ The shared demo is read-only. Creating workouts and editing plans require a writ
   <img src="media/active-workout-mobile.jpeg" alt="SetCtl mobile active workout showing Preacher Curl, set controls and exercise reordering" width="340">
 </p>
 
-Owner-provided mobile screenshots showing workout selection and an active session, reproduced unchanged.
+Workout selection and an active session, reproduced unchanged.
 
 ### See the work add up
 
 ![SetCtl Review overview and weekly volume chart with pink accents](media/review-overview.png)
 
-Owner-provided application screenshot showing the Review overview, training check-in and weekly volume.
+Review overview, training check-in and weekly volume.
 
 ### Follow strength progress
 
 ![SetCtl strength progress chart with Back Squat selected](media/strength-progress.png)
 
-Owner-provided screenshot of the exercise-specific strength view with Back Squat selected.
+Exercise-specific strength view with Back Squat selected.
 
 ### Make it yours
 
 ![SetCtl appearance settings with theme, compact mode, text size and accent colour options](media/appearance-settings.png)
 
-Owner-provided screenshot showing appearance controls and the shared demo's passkey notice. The screenshots are reproduced unchanged; the header remains a separately labeled AI-assisted product mockup.
+Appearance controls and the shared demo's passkey notice. The screenshots are reproduced unchanged; the header remains a separately labeled AI-assisted product mockup.
 
 ## Engineering highlights
 
