@@ -27,6 +27,15 @@ The shared demo is read-only. Creating workouts and editing plans require a writ
 | Reorder untouched exercises for today's workout | Review JSON, CSV, TSV and supported Excel imports | Session history and workout detail |
 | Substitute exercises without rewriting the template | Adjust exercise order, sets and rep targets | Data-quality-aware training check-ins |
 
+### Pick a session and start training
+
+<p>
+  <img src="media/home-mobile.jpeg" alt="SetCtl mobile home screen showing the Lower A workout and orange accents" width="340">
+  <img src="media/active-workout-mobile.jpeg" alt="SetCtl mobile active workout showing Preacher Curl, set controls and exercise reordering" width="340">
+</p>
+
+Owner-provided mobile screenshots showing workout selection and an active session, reproduced unchanged.
+
 ### See the work add up
 
 ![SetCtl Review overview and weekly volume chart with pink accents](media/review-overview.png)
