@@ -1,4 +1,4 @@
-<p align="center"><img src="media/product-hero.png" alt="SetCtl product mockup: a dark mobile workout screen with lime accents" width="100%"></p>
+<p align="center"><img src="media/product-hero.png" alt="SetCtl product hero: the current lime-accented home screen composited into a phone frame" width="100%"></p>
 
 # setctl — Plan. Train. Review.
 
@@ -6,7 +6,7 @@ A workout tracking PWA built around what happens on the gym floor: log a set, ad
 
 **[Try the live demo](https://setctl.pablovaswdfghdvcsd.workers.dev/auth)** · **[Product tour](docs/product-tour.md)** · **[Engineering case study](docs/architecture.md)** · **[Code samples](samples/README.md)**
 
-Built by (https://github.com/paploooov) with React, TypeScript, IndexedDB, Cloudflare Workers and D1. Development used AI coding assistance; product requirements, iteration and delivery are documented here through the resulting behavior and engineering decisions.
+Built by [paploooov](https://github.com/paploooov) with React, TypeScript, IndexedDB, Cloudflare Workers and D1. Development used AI coding assistance; product requirements, iteration and delivery are documented here through the resulting behavior and engineering decisions.
 
 This public repository is a portfolio case study with selected source samples. The full application and its development history are maintained separately. It is not a self-hosting distribution.
 
@@ -20,39 +20,51 @@ The shared demo is read-only. Creating workouts and editing plans require a writ
 
 ## Product
 
-| Train | Plan | Review |
-| --- | --- | --- |
-| Large set, reps and weight controls | Create and edit reusable plans | Weekly training volume |
-| Local set completion and reload recovery | Search exercises and add custom movements | Estimated one-rep-max trends |
-| Reorder untouched exercises for today's workout | Review JSON, CSV, TSV and supported Excel imports | Session history and workout detail |
-| Substitute exercises without rewriting the template | Adjust exercise order, sets and rep targets | Data-quality-aware training check-ins |
+| Train | Plan | Review | Body map |
+| --- | --- | --- | --- |
+| Large set, reps and weight controls | Create and edit reusable plans | Weekly training volume and personal bests | 17 muscle regions in 2D and a rotatable 3D model |
+| Local set completion and reload recovery | Search exercises and add custom movements | Estimated one-rep-max trends | Weighted set contributions, coloured by load |
+| Reorder untouched exercises for today's workout | Review JSON, CSV, TSV and supported Excel imports | Session analysis with findings cited to PubMed | Falls back to the flat map if WebGL is unavailable |
+| Substitute exercises without rewriting the template | Adjust exercise order, sets and rep targets | Data-quality-aware training check-ins | Front and back, driven by the same taxonomy |
+
+All screenshots below are live captures from the public demo account, reproduced unchanged and consistently on the app's default lime accent.
 
 ### Pick a session and start training
 
-<p>
-  <img src="media/home-mobile.jpeg" alt="SetCtl mobile home screen showing the Lower A workout and orange accents" width="340">
-  <img src="media/active-workout-mobile.jpeg" alt="SetCtl mobile active workout showing Preacher Curl, set controls and exercise reordering" width="340">
-</p>
-
-Workout selection and an active session, reproduced unchanged.
+![SetCtl home screen: today's session, last workout and all workout plans](media/home-desktop.png)
 
 ### See the work add up
 
-![SetCtl Review overview and weekly volume chart with pink accents](media/review-overview.png)
+![SetCtl training overview: workouts, volume, duration, repetitions, personal bests and weekly volume chart](media/review-desktop.png)
 
-Review overview, training check-in and weekly volume.
+### Know your training balance
 
-### Follow strength progress
+<p>
+  <img src="media/muscle-balance-desktop.png" alt="SetCtl muscle balance: front and back 2D maps with per-muscle contributions" width="49%">
+  <img src="media/muscle-balance-3d-desktop.png" alt="SetCtl muscle balance on the rotatable 3D anatomical model" width="49%">
+</p>
 
-![SetCtl strength progress chart with Back Squat selected](media/strength-progress.png)
+Seventeen regions, front and back, coloured by weighted set contribution. The same numbers drive a rotatable 3D model behind the toggle — anatomical surfaces maintained in code, with no external asset. If WebGL is missing, it falls back to the 2D map rather than failing.
 
-Exercise-specific strength view with Back Squat selected.
+### Read what a session actually measured
+
+![SetCtl session analysis: density, repetition profile, per-exercise table and findings cited to PubMed](media/session-analysis-desktop.png)
+
+Findings marked **Cited** carry a verified PubMed record; findings marked **App threshold** are setctl's own reporting cut-offs. The two render differently so they can never be mistaken for one another.
 
 ### Make it yours
 
-![SetCtl appearance settings with theme, compact mode, text size and accent colour options](media/appearance-settings.png)
+![SetCtl settings grouped by topic: appearance, accessibility, workout, review, data and sync, account and security](media/settings-desktop.png)
 
-Appearance controls and the shared demo's passkey notice. The screenshots are reproduced unchanged; the header remains a separately labeled AI-assisted product mockup.
+Settings are grouped by topic instead of stacked on one page, including the theme, accent colour, text size and layout density controls shown in the Appearance section.
+
+### On a phone
+
+The navigation is a thumb-reachable bottom bar, and anything too wide to read stacks into cards instead of hiding behind a horizontal scroller.
+
+| Today | Review | Muscle balance |
+| --- | --- | --- |
+| ![Home screen on a phone](media/home-mobile.png) | ![Training review on a phone](media/review-mobile.png) | ![Muscle balance on a phone](media/muscle-balance-mobile.png) |
 
 ## Engineering highlights
 
