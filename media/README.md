@@ -2,13 +2,17 @@
 
 | File | Origin |
 | --- | --- |
-| `home-mobile.jpeg` | Owner-provided mobile screenshot: Home and Lower A workout selection, reproduced unchanged |
-| `active-workout-mobile.jpeg` | Owner-provided mobile screenshot: active workout with Preacher Curl selected, reproduced unchanged |
-| `review-overview.png` | Owner-provided application screenshot: Review overview and weekly volume, reproduced unchanged |
-| `strength-progress.png` | Owner-provided application screenshot: Back Squat strength progress, reproduced unchanged |
-| `appearance-settings.png` | Owner-provided application screenshot: appearance controls and shared-demo passkey notice, reproduced unchanged |
-| `product-hero.png` | AI-generated device mockup based on an earlier local sample-workout capture; not an unmodified screenshot |
+| `home-desktop.png` | Live application screenshot, desktop viewport, demo account, reproduced unchanged |
+| `home-mobile.png` | Live application screenshot, mobile viewport, demo account, reproduced unchanged |
+| `review-desktop.png` | Live application screenshot: training overview, totals and weekly volume, reproduced unchanged |
+| `review-mobile.png` | Live application screenshot: training overview, mobile viewport, reproduced unchanged |
+| `muscle-balance-desktop.png` | Live application screenshot: 2D muscle balance, front and back maps, reproduced unchanged |
+| `muscle-balance-3d-desktop.png` | Live application screenshot: rotatable 3D muscle balance model, reproduced unchanged |
+| `muscle-balance-mobile.png` | Live application screenshot: 2D muscle balance, mobile viewport, reproduced unchanged |
+| `session-analysis-desktop.png` | Live application screenshot: per-session analysis with PubMed-cited findings, reproduced unchanged |
+| `settings-desktop.png` | Live application screenshot: settings grouped by topic, reproduced unchanged |
+| `product-hero.png` | Composited graphic: the actual `home-mobile.png` capture placed in an HTML/CSS-rendered phone frame, not an AI-generated scene |
 
-The owner supplied the five application screenshots for public portfolio use. Their capture date and viewport settings are not independently recorded. The figures shown describe the displayed training dataset, not product adoption. These images replace the earlier agent-captured app screenshots. The mockup may introduce small rendering differences; refer to the direct screenshots for actual UI.
+All nine application screenshots were captured from the same public demo account with `scripts/capture-screenshots.mjs` in the private application repository, on the app's default lime accent, and copied here unedited. They replace an earlier, visually inconsistent set that mixed non-default accent colours (orange, pink) and an older logo mark, captured at different times.
 
-The hero was generated with the built-in image generation tool using the actual workout screenshot as a reference. Prompt: "Create a polished product showcase hero for setctl, a workout tracking app. Wide landscape. Use the actual application screenshot as screen-content reference. Premium dark graphite smartphone on the right, near-black background with restrained lime ambient glow. Left: setctl; Plan. Train. Review.; Workout tracking, built for the gym. Caption: Product mockup · Sample workout. No people, awards, invented statistics or additional features."
+The hero is a composition, not a photograph or an unmodified screenshot: an HTML page positions the real `home-mobile.png` capture inside a drawn phone-bezel graphic on a dark gradient background, rendered to a PNG with headless Chromium. Every pixel inside the phone's screen area is the actual application; only the bezel, background and typography around it are drawn. This replaces the previous AI-generated hero, which used an older screenshot as a loose visual reference rather than the current UI, and carried the square "S" app-icon mark instead of the header's circle-and-bar brand mark.
