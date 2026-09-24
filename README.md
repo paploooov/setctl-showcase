@@ -1,4 +1,4 @@
-<p align="center"><img src="media/product-hero.png" alt="SetCtl product hero: the current lime-accented home screen composited into a phone frame" width="100%"></p>
+<p align="center"><img src="media/hero-banner.png" alt="SetCtl product hero: the current lime-accented home screen composited into a phone frame" width="100%"></p>
 
 # setctl — Plan. Train. Review.
 
