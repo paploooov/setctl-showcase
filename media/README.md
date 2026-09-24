@@ -11,7 +11,7 @@
 | `muscle-balance-mobile.png` | Live application screenshot: 2D muscle balance, mobile viewport, reproduced unchanged |
 | `session-analysis-desktop.png` | Live application screenshot: per-session analysis with PubMed-cited findings, reproduced unchanged |
 | `settings-desktop.png` | Live application screenshot: settings grouped by topic, reproduced unchanged |
-| `product-hero.png` | Composited graphic: the actual `home-mobile.png` capture placed in an HTML/CSS-rendered phone frame, not an AI-generated scene |
+| `hero-banner.png` | Composited graphic: the actual `home-mobile.png` capture placed in an HTML/CSS-rendered phone frame, not an AI-generated scene |
 
 All nine application screenshots were captured from the same public demo account with `scripts/capture-screenshots.mjs` in the private application repository, on the app's default lime accent, and copied here unedited. They replace an earlier, visually inconsistent set that mixed non-default accent colours (orange, pink) and an older logo mark, captured at different times.
 
